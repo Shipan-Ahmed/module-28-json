@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        #post-container{
+            max-width: 1160px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid ;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            row-gap: 40px;
+        }
+        #postContent{
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 1px 1px 1px 1px gray;
+            padding: 10px;
+            height: 100%;
+        }
+        p{
+            color: gray;
+        }
+    </style>
 </head>
 <body>
     <h1>JSON Information</h1>
@@ -14,6 +36,18 @@
 
     <button onclick="dataPost()">Data Post</button>
 
+
+    <!-- // class 5 -->
+     <!-- <ol id="post-list">
+
+     </ol> -->
+
+
+     <section id="post-container">
+        
+     </section>
+
     <script src="json.js"></script>
+    <script src="post.js"></script>
 </body>
 </html>

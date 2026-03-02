@@ -31,14 +31,14 @@ const dataLoad = () => {
       .then((json) => console.log(json));
 }
 
-const dataPost = () => {
-    const url = "https://jsonplaceholder.typicode.com/posts";
-    const data = fetch(url);
-    data.then((response) => response.json())
-    .then((json) => displayData(json));
-}
+// const dataPost = () => {
+//     const url = "https://jsonplaceholder.typicode.com/posts";
+//     const data = fetch(url);
+//     data.then((response) => response.json())
+//     .then((json) => displayData(json));
+// }
 
 
-const displayData = (posts) => {
-    posts.forEach( post => console.log(post));
-}
+// const displayData = (posts) => {
+//     posts.forEach( post => console.log(post));
+// }
