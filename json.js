@@ -18,7 +18,27 @@
 // console.log(josonParse);
 // console.log(typeof josonParse);
 
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-  .then((response) => response.json())
-    .then((json) => console.log(json)); 
-        console.log("This will log before the fetch response is received.");
+// class 3
+
+const dataLoad = () => {
+    // fetch returns a promise of response object -- request to the url
+    fetch("https://jsonplaceholder.typicode.com/todos/1")
+        // promise of response object converted to json
+        // server response is converted to json data
+        .then((response) => response.json())
+        // promise of json data
+        // show the json data for client
+      .then((json) => console.log(json));
+}
+
+const dataPost = () => {
+    const url = "https://jsonplaceholder.typicode.com/posts";
+    const data = fetch(url);
+    data.then((response) => response.json())
+    .then((json) => displayData(json));
+}
+
+
+const displayData = (posts) => {
+    posts.forEach( post => console.log(post));
+}
