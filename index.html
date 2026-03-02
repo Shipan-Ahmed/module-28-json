@@ -25,6 +25,11 @@
         p{
             color: gray;
         }
+        #container{
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +40,8 @@
     <!-- class 4 -->
 
     <button onclick="dataPost()">Data Post</button>
+
+    <button onclick="dataToDo()">toDo</button>
 
 
     <!-- // class 5 -->
@@ -47,7 +54,15 @@
         
      </section>
 
+     <section id="container">
+        <h2>To Do List</h2>
+        <ul id="toDo-list">
+            
+        </ul>
+     </section>
+
     <script src="json.js"></script>
     <script src="post.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>
